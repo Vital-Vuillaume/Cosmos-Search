@@ -1,99 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?famille=Ubuntu&afficher=swap');
+
 * {
+
     margin: 0;
     border: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0; 
+
 }
-:root {
-    --background-color: #2B2A4C;
-    --container-color: #363559;
-    --border-color: #EA906C;
-    --content-color: #EEE2DE;
-    --hover-color: #444268;
-}
+
 body {
-   background: var(--background-color);
-   margin-left: 10%;
-    margin-right: 10%;
+
+   background: #262626;
+   color: white;
+   overflow-y: scroll;
+
 }
-a {
-    text-decoration: none;
-}
-.main-search {
-    margin-top: 10px;
+
+.main {
+
     display: flex;
-    justify-content: left;
-    transform: translate(-10px);
+    transform: translateY(25px);
+    position: fixed;
+    top: -25px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #262626;
+    padding-top: 0.8%;
+    padding-bottom: 0.4%;
+
 }
+
+.img-logo {
+
+    width: 40px;
+    height: 40px;
+    transform: translateX(30px);
+    margin-top: 2px;
+
+}
+
 .main-title {
-    text-transform: uppercase;
-    font-size: 35px;
-    color: var(--content-color);
+
+    font-size: 2.5em;
+    margin-left: 35px;
+    transform: translateY(-5px);
+    font-family: 'Secular One', sans-serif;
+
 }
+
 .inter {
-    margin-left: 10px;
-    border: 2px solid var(--border-color);
-    border-radius: 50px;
-    height: 50px;
-    width: 118%;
+
+    margin-left: 35px;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 215%;
+    height: 53px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--content-color);
+    transform: translateY(-2px);
+
 }
-.search-img {
-    height: 20px;
-}
+
 .search-input {
-    width: 75%;
+
+    width: 85%;
+    font-size: 1.15em;
     transition: 0.3s ease-in-out;
-    height: 60%;
-    background: var(--content-color);
+    height: 80%;
+    background: transparent;
     margin-left: 10px;
     margin-right: 10px;
+    transform: translateX(-25px);
+    font-family: 'Secular One', sans-serif;
+    color: white;
+
 }
+
 .search-input:focus {
+
     outline: none;
+
 }
+
 .send-button {
+
     position: relative;
     border: 0;
     background: none;
     margin-left: 10px;
     margin-right: 10px;
+
 }
+
 .send-img {
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    height: 20px;
+    height: 22px;
     cursor: pointer;
+
 }
+
+a {
+
+    color: white;
+    text-decoration: none;
+    cursor: default;
+
+}
+
+.search {
+
+    transform: translateY(80px);
+
+}
+
 .search-container, .wikipedia {
-    border-radius: 10px;
-    padding: 10px;
-    background: var(--container-color);
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: var(--content-color);
-    overflow-x: auto;
-    scrollbar-width: none;
-    transition: 0.3s ease-in-out;
-    transform: translate(-10px);
+
+    padding: 30px;
+    border-bottom: 1px solid white;
+    width: 70%;
+    margin-top: 30px;
+    transform: translateX(250px);
+    background-color: #323131;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+
 }
-.search-container:hover, .wikipedia:hover {
-    background: var(--hover-color);
-}
-.supra-content {
-}
+
 .container-title {
     font-size: 20px;
     text-decoration: underline;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 }
 .wikipedia-title {
     margin-left: 40px;
@@ -103,94 +147,292 @@ a {
 }
 .inter-container {
     display: flex;
-    margin-bottom: 5px;
+
 }
 .wiki-img {
-    border-radius: 10px;
-    height: 160px;
-    width: auto;
+
+    transform: translateY(-10px);
+    height: 140px;
+    width: 150px;
 }
-.next-button {
+
+.supra-content {
+
+ transform: translateX(-10px);
+
+}
+
+.next {
+
+    position: relative;
+    background-color: #323131;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Secular One', sans-serif;
+    margin-left: 84px;
+    top: 45px;
+    
+}
+
+.footer {
+
+    transform: translateY(100px);
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    background-color: #161616;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+
 }
-.next-link {
-    font-size: 30px;
-    text-decoration: none;
-    color: var(--content-color);
-    text-transform: uppercase;
+
+.millieux {
+
+    font-size: 1.5em;
+
 }
-@media screen and (max-width: 800px) {
-    .main-search {
-        display: block;
+
+.github {
+
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px);
+    transition: 0.5s;
+
+}
+
+.github:hover {
+
+    transform: translateZ(10px);
+
+}
+
+.github-lien {
+
+    cursor: pointer;
+
+}
+
+::-webkit-scrollbar {
+
+    width: 0.7vw;
+    background-color: #262626;
+
+}
+  
+::-webkit-scrollbar-thumb {
+
+    background-color: #888;
+    border-radius: 6vh;
+    height: 16.5vh; 
+
+}
+  
+::-webkit-scrollbar-thumb:hover {
+
+    background-color: #555;
+
+}
+
+@media screen and (max-width: 375px) { 
+
+    .img-logo {
+
+        transform: translateX(20px);
+    
     }
+    
     .main-title {
+    
         display: none;
+    
     }
+
+    .main {
+
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
     .inter {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        transform: translate(-10px);
+
+        transform: translateX(-7px);
+        width: 104%;
+        height: 45px;
+    
     }
+
     .search-input {
+
         width: 85%;
+        font-size: 1.1em;
+        transition: 0.3s ease-in-out;
+        height: 80%;
+        margin-left: -4px;
+        margin-right: 0px;
+        transform: translateX(0px);
+    
     }
-    .search-container:hover, .wikipedia:hover {
-        background: var(--container-color);
-    }
-}
 
-@media screen and (max-width: 700px) {
-    .search-input {
-        width: 83%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .search-input {
-        width: 82%;
-    }
-}
-
-@media screen and (max-width: 500px) {
     .inter-container {
+
         display: block;
+
     }
+
     .wikipedia-title {
+
         margin-left: 0px;
-        font-size: 30px;
+        font-size: 50px;
+
     }
-    .search-input {
-        width: 78%;
-    }
-}
-@media screen and (max-width: 400px) {
-   .search-input {
-        width: 77%;
-    } 
-}
-@media screen and (max-width: 350px) {
-   .search-input {
+
+    .search-container, .wikipedia {
+
+        padding: 30px;
+        transform: translateY(-40px);
         width: 76%;
-    } 
-}
-@media screen and (min-width: 1200px) {
-    .inter {
-        width: 200%;
+        margin-left: 15px;
+        margin-top: 30px;
+  
+    
     }
-    .search-input {
-        width: 85%;
+
+    .next {
+
+        position:relative;
+        top: 60px;
+        left: 4%;
+        margin-left: 0;
+
     }
-    .send-button {
-        margin: 0;
+
+    .footer {
+
+        transform: translateY(80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 98%;
+        background-color: #161616;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Secular One', sans-serif;
+    
     }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
+
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (max-width: 320px) {
+
+    .img-logo {
+
+        display: none;
+    
+    }
+    
+    .main-title {
+    
+        display: none;
+    
+    }
+
+    .main {
+
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
     .inter {
-        width: 350%;
+
+        transform: translateX(-26px);
+        width: 102%;
+        height: 45px;
+    
     }
+
     .search-input {
-        width: 90%;
+
+        width: 85%;
+        font-size: 1.1em;
+        transition: 0.3s ease-in-out;
+        height: 80%;
+        margin-left: 10px;
+        margin-right: 0px;
+        transform: translateX(0px);
+    
     }
+
+    .inter-container {
+
+        display: block;
+
+    }
+
+    .wikipedia-title {
+
+        margin-left: 0px;
+        font-size: 50px;
+
+    }
+
+    .search-container, .wikipedia {
+
+        padding: 30px;
+        transform: translateY(-40px);
+        width: 72%;
+        margin-left: 15px;
+        margin-top: 30px;
+  
+    
+    }
+
+    .next {
+
+        position:relative;
+        bottom: -60px;
+        left: 5%;
+        margin-left: 0;
+
+    }
+
+    .footer {
+
+        transform: translateY(80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 98%;
+        background-color: #161616;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Secular One', sans-serif;
+    
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
 }

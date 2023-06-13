@@ -1,96 +1,517 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 * {
+
+    font-family: 'Secular One', sans-serif;
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+
 }
-:root {
-    --background-color: #2B2A4C;
-    --border-color: #EA906C;
-    --content-color: #EEE2DE;
-}
+
 body {
-   background: var(--background-color); 
+
+   background: #262626;
+   color: white;
+
 }
+
+.img-logo{
+
+    margin-right: 10px;
+    width: 15%;
+    height: 15%;
+    transform: translateY(-5px);
+
+}
+
+.logo {
+
+    transform: translateY(-88px);
+    display: flex;
+    justify-content: center;
+
+}
+
 .main {
+
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+
 }
+
 .main-title {
+
     text-transform: uppercase;
     text-align: center;
-    font-size: 80px;
-    color: var(--content-color);
+    font-size: 4.7em;
+
 }
+
 .inter {
-    border: 2px solid var(--border-color);
-    border-radius: 50px;
-    width: 100%;
-    height: 50px;
+
+    transform: translateY(-40px);
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 98%;
+    height: 53px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--content-color);
+    margin-left: 5px;
+
 }
-.search-img {
-    height: 20px;
-}
+
 .search-input {
+
     width: 85%;
+    font-size: 1.15em;
     transition: 0.3s ease-in-out;
-    height: 60%;
-    background: var(--content-color);
+    height: 80%;
+    background: transparent;
     margin-left: 10px;
     margin-right: 10px;
+    transform: translateX(-25px);
+    color: white;
+
 }
+
 .search-input:focus {
+
     outline: none;
+
 }
+
 .send-button {
+
     position: relative;
     border: 0;
     background: none;
     margin-left: 10px;
     margin-right: 10px;
+
 }
+
 .send-img {
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    height: 20px;
+    height: 22px;
     cursor: pointer;
+
 }
-.line {
-    margin-top: 10px;
-    border-radius: 10px;
-    width: 100%;
-    height: 3px;
-    background: var(--content-color);
-}
+
 .privacy-text {
-    color: var(--content-color);
+
+    font-size: 1.2em;
+    margin-left: 8px;
+    
 }
-@media screen and (max-width: 700px) {
+
+a {
+
+    color: white;
+    text-decoration: none;
+    cursor: default;
+
+}
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #161616;
+    padding: 1%;
+    text-align: center;
+
+}
+
+.millieux {
+
+    font-size: 1.5em;
+
+}
+
+.github {
+
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px);
+    transition: 0.5s;
+
+}
+
+.github:hover {
+
+    transform: translateZ(10px);
+
+}
+
+.github-lien {
+
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 2560px) {
+
+    .img-logo{
+
+        width: 13%;
+        height: 13%;
+        transform: translateY(8px);
+        margin-right: 7px;
+    
+    }
+
     .main-title {
-        font-size: 50px;
+
+        font-size: 7.5em;
+    
+    }
+
+    .inter {
+
+        transform: translateX(-86px);
+        width: 115%;
+        height: 65px;
+        border: white 2px solid;
+    
     }
 
     .search-input {
-        width: 75%;
+
+        width: 65%;
+        font-size: 2em;
+        height: 35%;
+        margin-left: 320px;
+        transform: translateX(-320px);
+    
     }
-}
-@media screen and (max-width: 450px) {
-    .main-title {
-        font-size: 35px;
+
+    form {
+
+        transform: translateY(-30px);
+
     }
-    .search-input {
-        width: 68%;
-    }
+
     .privacy-text {
-        font-size: 10px;
+
+        font-size: 1.7em;
+        margin-left: -78px;
+        transform: translateY(20px);
+        
     }
+
+    .millieux {
+
+        font-size: 2.5em;
+    
+    }
+
+    .github {
+
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .copyright {
+
+        font-size: 2em;
+
+    }
+
+}
+
+@media screen and (max-width: 1365px) {
+
+    .img-logo{
+
+        width: 16%;
+        height: 16%;
+        transform: translateY(8px);
+        margin-right: 7px;
+    
+    }
+
+    .main-title {
+
+        font-size: 4.8em;
+    
+    }
+
+    .inter {
+
+        transform: translateX(-62px);
+        width: 121%;
+        height: 46px;
+        border: white 1px solid;
+    
+    }
+
+    .search-input {
+
+        width: 65%;
+        font-size: 1.29em;
+        height: 35%;
+        margin-left: 155px;
+        transform: translateX(-153px);
+    
+    }
+
+    form {
+
+        transform: translateY(-30px);
+
+    }
+
+    .privacy-text {
+
+        font-size: 1em;
+        margin-left: -55px;
+        transform: translateY(20px);
+        
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .img-logo{
+
+        width: 20%;
+        height: 20%;
+        transform: translateY(8px);
+        margin-right: 7px;
+    
+    }
+
+    .main-title {
+
+        font-size: 4.7em;
+    
+    }
+
+    .inter {
+
+        transform: translateX(-59px);
+        width: 127%;
+        height: 46px;
+        border: white 1px solid;
+    
+    }
+
+    .search-input {
+
+        width: 65%;
+        font-size: 1.2em;
+        height: 35%;
+        margin-left: 105px;
+        transform: translateX(-102px);
+    
+    }
+
+    form {
+
+        transform: translateY(-30px);
+
+    }
+
+    .privacy-text {
+
+        font-size: 0.95em;
+        margin-left: -55px;
+        transform: translateY(20px);
+        
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .img-logo{
+
+        width: 25%;
+        height: 25%;
+        transform: translateY(8px);
+        margin-right: 7px;
+    
+    }
+
+    .main-title {
+
+        font-size: 4.2em;
+    
+    }
+
+    .inter {
+
+        transform: translateX(-43px);
+        width: 126%;
+        height: 45px;
+        border: white 1px solid;
+    
+    }
+
+    .search-input {
+
+        width: 65%;
+        font-size: 0.99em;
+        height: 35%;
+        margin-left: 55px;
+        transform: translateX(-60px);
+    
+    }
+
+    form {
+
+        transform: translateY(-30px);
+
+    }
+
+    .privacy-text {
+
+        font-size: 1em;
+        margin-left: -35px;
+        transform: translateY(20px);
+        
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
+}
+
+@media screen and (max-width: 375px) { 
+
+    .img-logo{
+
+        width: 23%;
+        height: 23%;
+        transform: translateY(8px);
+        margin-right: 7px;
+    
+    }
+
+    .main-title {
+
+        font-size: 3.8em;
+    
+    }
+
+    .inter {
+
+        transform: translateX(-36px);
+        width: 123%;
+        height: 45px;
+        border: white 1px solid;
+    
+    }
+
+    .search-input {
+
+        width: 65%;
+        font-size: 0.90em;
+        height: 35%;
+        margin-left: 50px;
+        transform: translateX(-50px);
+    
+    }
+
+    form {
+
+        transform: translateY(-30px);
+
+    }
+
+    .privacy-text {
+
+        font-size: 0.95em;
+        margin-left: -30px;
+        transform: translateY(20px);
+        
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .img-logo {
+
+        width: 20%;
+        height: 20%;
+        transform: translateY(10px);
+    
+    }
+
+    .main-title {
+
+        font-size: 3em;
+    
+    }
+
+    .inter {
+
+        transform: translateX(-46px);
+        border: 1px solid white;
+        width: 140%;
+        height: 45px;
+        
+    }
+
+    .search-input {
+
+        width: 65%;
+        font-size: 0.90em;
+        height: 35%;
+        margin-left: 30px;
+        transform: translateX(-36px);
+    
+    }
+
+    form {
+
+        transform: translateY(-50px);
+
+    }
+
+    .privacy-text {
+
+        font-size: 0.85em;
+        margin-left: -38px;
+        transform: translateY(20px);
+        
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
 }
