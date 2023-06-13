@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?famille=Ubuntu&afficher=swap');
+
+* {
+
+    margin: 0;
+    border: 0;
+    padding: 0; 
+
+}
+
+body {
+
+   background: #262626;
+   color: white;
+   overflow-y: scroll;
+
+}
+
+.main {
+
+    display: flex;
+    transform: translateY(25px);
+    position: fixed;
+    top: -25px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #262626;
+    padding-top: 0.8%;
+    padding-bottom: 0.4%;
+
+}
+
+.img-logo {
+
+    width: 40px;
+    height: 40px;
+    transform: translateX(30px);
+    margin-top: 2px;
+
+}
+
+.main-title {
+
+    font-size: 2.5em;
+    margin-left: 35px;
+    transform: translateY(-5px);
+    font-family: 'Secular One', sans-serif;
+
+}
+
+.inter {
+
+    margin-left: 35px;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 215%;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-2px);
+
+}
+
+.search-input {
+
+    width: 85%;
+    font-size: 1.15em;
+    transition: 0.3s ease-in-out;
+    height: 80%;
+    background: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translateX(-25px);
+    font-family: 'Secular One', sans-serif;
+    color: white;
+
+}
+
+.search-input:focus {
+
+    outline: none;
+
+}
+
+.send-button {
+
+    position: relative;
+    border: 0;
+    background: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.send-img {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 22px;
+    cursor: pointer;
+
+}
+
+a {
+
+    color: white;
+    text-decoration: none;
+    cursor: default;
+
+}
+
+.search {
+
+    transform: translateY(80px);
+
+}
+
+.search-container, .wikipedia {
+
+    padding: 30px;
+    border-bottom: 1px solid white;
+    width: 70%;
+    margin-top: 30px;
+    transform: translateX(250px);
+    background-color: #323131;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.container-title {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 7px;
+}
+.wikipedia-title {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+.inter-container {
+    display: flex;
+
+}
+.wiki-img {
+
+    transform: translateY(-10px);
+    height: 140px;
+    width: 150px;
+}
+
+.supra-content {
+
+ transform: translateX(-10px);
+
+}
+
+.next {
+
+    position: relative;
+    background-color: #323131;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Secular One', sans-serif;
+    margin-left: 84px;
+    top: 45px;
+    
+}
+
+.footer {
+
+    transform: translateY(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    background-color: #161616;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+.millieux {
+
+    font-size: 1.5em;
+
+}
+
+.github {
+
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px);
+    transition: 0.5s;
+
+}
+
+.github:hover {
+
+    transform: translateZ(10px);
+
+}
+
+.github-lien {
+
+    cursor: pointer;
+
+}
+
+::-webkit-scrollbar {
+
+    width: 0.7vw;
+    background-color: #262626;
+
+}
+  
+::-webkit-scrollbar-thumb {
+
+    background-color: #888;
+    border-radius: 6vh;
+    height: 16.5vh; 
+
+}
+  
+::-webkit-scrollbar-thumb:hover {
+
+    background-color: #555;
+
+}
+
+@media screen and (max-width: 375px) { 
+
+    .img-logo {
+
+        transform: translateX(20px);
+    
+    }
+    
+    .main-title {
+    
+        display: none;
+    
+    }
+
+    .main {
+
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .inter {
+
+        transform: translateX(-7px);
+        width: 104%;
+        height: 45px;
+    
+    }
+
+    .search-input {
+
+        width: 85%;
+        font-size: 1.1em;
+        transition: 0.3s ease-in-out;
+        height: 80%;
+        margin-left: -4px;
+        margin-right: 0px;
+        transform: translateX(0px);
+    
+    }
+
+    .inter-container {
+
+        display: block;
+
+    }
+
+    .wikipedia-title {
+
+        margin-left: 0px;
+        font-size: 50px;
+
+    }
+
+    .search-container, .wikipedia {
+
+        padding: 30px;
+        transform: translateY(-40px);
+        width: 76%;
+        margin-left: 15px;
+        margin-top: 30px;
+  
+    
+    }
+
+    .next {
+
+        position:relative;
+        top: 60px;
+        left: 4%;
+        margin-left: 0;
+
+    }
+
+    .footer {
+
+        transform: translateY(80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 98%;
+        background-color: #161616;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Secular One', sans-serif;
+    
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .img-logo {
+
+        display: none;
+    
+    }
+    
+    .main-title {
+    
+        display: none;
+    
+    }
+
+    .main {
+
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .inter {
+
+        transform: translateX(-26px);
+        width: 102%;
+        height: 45px;
+    
+    }
+
+    .search-input {
+
+        width: 85%;
+        font-size: 1.1em;
+        transition: 0.3s ease-in-out;
+        height: 80%;
+        margin-left: 10px;
+        margin-right: 0px;
+        transform: translateX(0px);
+    
+    }
+
+    .inter-container {
+
+        display: block;
+
+    }
+
+    .wikipedia-title {
+
+        margin-left: 0px;
+        font-size: 50px;
+
+    }
+
+    .search-container, .wikipedia {
+
+        padding: 30px;
+        transform: translateY(-40px);
+        width: 72%;
+        margin-left: 15px;
+        margin-top: 30px;
+  
+    
+    }
+
+    .next {
+
+        position:relative;
+        bottom: -60px;
+        left: 5%;
+        margin-left: 0;
+
+    }
+
+    .footer {
+
+        transform: translateY(80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 98%;
+        background-color: #161616;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Secular One', sans-serif;
+    
+    }
+
+    .github:hover {
+
+        transform: translateY(5px)
+    
+    }
+
+}
