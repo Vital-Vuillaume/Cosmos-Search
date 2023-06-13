@@ -139,26 +139,36 @@ a {
     text-decoration: underline;
     margin-bottom: 7px;
 }
+
 .wikipedia-title {
     margin-left: 40px;
     display: flex;
     align-items: center;
     font-size: 50px;
 }
+
 .inter-container {
     display: flex;
 
 }
+
+.container-link {
+
+    font-size: 1.3em;
+
+}
+
 .wiki-img {
 
     transform: translateY(-10px);
     height: 140px;
     width: 150px;
+
 }
 
 .supra-content {
 
- transform: translateX(-10px);
+    transform: translateX(-10px);
 
 }
 
@@ -290,7 +300,33 @@ a {
 
         margin-left: 0px;
         font-size: 50px;
+        min-width: 235px;
+        overflow: auto;
+        scrollbar-width: none;
 
+    }
+
+    .wikipedia-title::-webkit-scrollbar {
+
+        height: 3px;
+        background: transparent;    
+    
+    }
+
+    .container-link {
+
+        position: relative;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-bottom: 3px;
+    
+    }
+
+    .container-link::-webkit-scrollbar {
+
+        height: 2.5px;
+        background: transparent; 
+    
     }
 
     .search-container, .wikipedia {
@@ -300,7 +336,6 @@ a {
         width: 76%;
         margin-left: 15px;
         margin-top: 30px;
-  
     
     }
 
@@ -361,8 +396,8 @@ a {
 
     .inter {
 
-        transform: translateX(-26px);
-        width: 102%;
+        transform: translateX(-18px);
+        width: 103%;
         height: 45px;
     
     }
@@ -373,7 +408,7 @@ a {
         font-size: 1.1em;
         transition: 0.3s ease-in-out;
         height: 80%;
-        margin-left: 10px;
+        margin-left: -4px;
         margin-right: 0px;
         transform: translateX(0px);
     
@@ -389,7 +424,17 @@ a {
 
         margin-left: 0px;
         font-size: 50px;
+        min-width: 235px;
+        overflow: auto;
+        scrollbar-width: none;
 
+    }
+
+    .wikipedia-title::-webkit-scrollbar {
+
+        height: 3px;
+        background: transparent;    
+    
     }
 
     .search-container, .wikipedia {
@@ -400,6 +445,22 @@ a {
         margin-left: 15px;
         margin-top: 30px;
   
+    
+    }
+
+    .container-link {
+
+        position: relative;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-bottom: 3px;
+    
+    }
+
+    .container-link::-webkit-scrollbar {
+
+        height: 2.5px;
+        background: transparent; 
     
     }
 

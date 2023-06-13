@@ -5,127 +5,60 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'style/search.css') }}">
-	<title>a - CosmosSearch</title>
+	<title>{{query}} - CosmosSearch</title>
 </head>
 <body>
     <div class="main">
-            <img src="planet.png" alt=""class="img-logo">
-            <h1 class="main-title"><a href="https://www.rmbi.ch/cesco/">cosmos</a></h1>
+            <img src="{{ url_for('static', filename='images/planet.png') }}" alt=""class="img-logo">
+            <h1 class="main-title">cosmos</h1>
 
         <form method="get" action="/search/" class="searchForm"> 
             <div class="inter">
-                <input name="query" type="text" class="search-input" placeholder="Search the web privately...">
+                <input value="{{query}}" name="query" type="text" class="search-input" autocomplete="off" placeholder="Search the web privately...">
 
                 <button class="send-button" type="submit"> 
-                    <img src="search.png" alt="Send icon" class="send-img">
+                    <img src="{{ url_for('static', filename='images/send-img.png') }}" alt="Send icon" class="send-img">
                 </button>
             </div>
         </form>
     </div>
         <div class="search">
-            
-            <a href="https://en.wikipedia.org/wiki/A">
+            {% for i in info %}
+            <a href="{{i['url']}}">
                 <div class="wikipedia">
                     <div class="supra-content">
                         <div class="inter-container">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/150px-Wikipedia-logo-v2.svg.png" alt="" width="200" class="wiki-img">
-                            <h1 class="wikipedia-title">A<br></h1>
+                            <img src="{{i['image']}}" alt="" width="200" class="wiki-img">
+                            <h1 class="wikipedia-title">{{i['title']}}<br></h1>
                         </div>
-                        <p class="container-description">A, or a, is the first letter and the first vowel of the Latin alphabet, used in the modern English alphabet, the alphabets of other western European languages and others worldwide. Its name in English is a (pronounced ), plural aes.</p>
+                        <p class="container-description">{{i['summary']}}</p>
                     </div>
                 </div>
             </a>
+            {% endfor %}
             
-            
-            <a href="https://en.wikipedia.org/wiki/A">
+            {% for result in results %}
+            <a href="{{result['link']}}">
                 <div class="search-container">
                     <div class="supra-content">
-                        <h1 class="container-title">A - Wikipedia</h1>
-                        <p class="container-link">https://en.wikipedia.org/wiki/A</p>
-                        <p class="container-description">A, or a, is the first letter and the first vowel of the Latin alphabet, used in the modern English alphabet, the alphabets of other western European languages ...</p>
+                        <h1 class="container-title">{{result['title']}}</h1>
+                        <p class="container-link">{{result['link']}}</p>
+                        <p class="container-description">{{result['description']}}</p>
                     </div>
                 </div>
             </a>
+            {% endfor %}
             
-            <a href="https://en.wiktionary.org/wiki/a">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">a - Wiktionary</h1>
-                        <p class="container-link">https://en.wiktionary.org/wiki/a</p>
-                        <p class="container-description">In English, the letter a usually denotes the near-open front unrounded vowel (IPA: /æ/), as in pad, the open back unrounded vowel (IPA: /ɑː/) as in father, or, ...</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://www.merriam-webster.com/dictionary/a">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">A Definition &amp; Meaning</h1>
-                        <p class="container-link">https://www.merriam-<br>webster.com/dictionary/a</p>
-                        <p class="container-description">noun ; 2 · the sixth tone of a C-major scale ; 3 · a graphic device for reproducing the letter a ; 4 · one designated a especially as the first in order or class ; 6.</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://www.dictionary.com/browse/a">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">A Definition &amp; Meaning</h1>
-                        <p class="container-link">https://www.dictionary<br>.com/browse/a</p>
-                        <p class="container-description">A prefix meaning “without” or “not” when forming an adjective (such as amorphous, without form, or atypical, not typical), and “absence of” when forming a noun ...</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://www.thefreedictionary.com/A">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">A - definition of A by The Free Dictionary</h1>
-                        <p class="container-link">https://www.<br>thefreedictionary.com/A</p>
-                        <p class="container-description">A&#39;s As, a&#39;s as. 1. the first letter of the English alphabet, a vowel. 2. any spoken sound represented by this letter. 3.</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://www.macmillandictionary.com/us/dictionary/american/a_1">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">A (noun) definition and synonyms</h1>
-                        <p class="container-link">https://www.macmillandictionary<br>.com/us/dictionary/american/a_1</p>
-                        <p class="container-description">Definition of A (noun): first letter of English alphabet; musical note; mark for student&#39;s work; blood group.</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://www.collinsdictionary.com/dictionary/english/a">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">A definition and meaning | Collins English Dictionary</h1>
-                        <p class="container-link">https://www.collinsdictionary.com<br>/dictionary/english/a</p>
-                        <p class="container-description">A is the first letter of the English alphabet. 2. variable noun. In music, A is the sixth note in the scale of C major.</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://www.britannica.com/dictionary/a">
-                <div class="search-container">
-                    <div class="supra-content">
-                        <h1 class="container-title">A Definition &amp; Meaning | Britannica Dictionary</h1>
-                        <p class="container-link">https://www.britannica.<br>com/dictionary/a</p>
-                        <p class="container-description">A meaning: 1 : the first letter of the English alphabet; 2 : a musical note or key referred to by the letter A the sixth tone of a C-major scale.</p>
-                    </div>
-                </div>
-            </a>
-            
+
         </div>
-        <a class="next" href="/search/?query=a&amp;page=1">NEXT</a>
+        <a class="next" href="{{next_url}}">NEXT</a>
 
         <footer>
             <div class="footer">
                 <p class="copyright">ⓒ 2022 - AsterJdM production</p>
                 <p class="millieux">|</p>
                 <a class="github-lien" href="https://github.com/asterjdm/Cosmos-Search">
-                    <img class="github" src="github.png" alt="">
+                    <img class="github" src="{{ url_for('static', filename='images/github.png') }}" alt="">
                 </a>
             </div>
         </footer>

@@ -25,7 +25,7 @@
 
             <form method="get" action="/search/" class="searchForm"> 
                 <div class="inter">
-                    <input name="query" type="text" class="search-input" placeholder="Search the web privately...">
+                    <input name="query" autocomplete="off" type="text" class="search-input" placeholder="Search the web privately...">
 
                     <button class="send-button" type="submit"> 
                         <img src="{{ url_for('static', filename='images/send-img.png') }}" class="send-img">
