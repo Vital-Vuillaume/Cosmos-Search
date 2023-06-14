@@ -407,7 +407,7 @@ a {
 
         width: 23%;
         height: 23%;
-        transform: translateY(8px);
+        transform: translateY(12px);
         margin-right: 7px;
     
     }
@@ -463,9 +463,9 @@ a {
 
     .img-logo {
 
-        width: 20%;
-        height: 20%;
-        transform: translateY(10px);
+        width: 25%;
+        height: 25%;
+        transform: translateY(5px);
     
     }
 

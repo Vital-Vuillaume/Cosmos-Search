@@ -6,13 +6,13 @@
     margin: 0;
     border: 0;
     padding: 0; 
+    color: white;
 
 }
 
 body {
 
    background: #262626;
-   color: white;
    overflow-y: scroll;
 
 }
@@ -117,6 +117,8 @@ a {
 .search {
 
     transform: translateY(80px);
+    margin-left: 18.5%;
+    margin-right: 7.5%;
 
 }
 
@@ -124,9 +126,8 @@ a {
 
     padding: 30px;
     border-bottom: 1px solid white;
-    width: 70%;
+    width: 94%;
     margin-top: 30px;
-    transform: translateX(250px);
     background-color: #323131;
     border-radius: 10px 10px 0px 0px;
     cursor: pointer;
@@ -175,6 +176,7 @@ a {
 .next {
 
     position: relative;
+    border: none;
     background-color: #323131;
     padding: 10px 20px;
     text-decoration: none;
@@ -251,6 +253,14 @@ a {
 }
 
 @media screen and (max-width: 375px) { 
+
+    .search {
+
+        transform: translateY(40px);
+        margin-left: 4%;
+        margin-right: 4%;
+    
+    }
 
     .img-logo {
 
@@ -332,9 +342,9 @@ a {
     .search-container, .wikipedia {
 
         padding: 30px;
-        transform: translateY(-40px);
-        width: 76%;
-        margin-left: 15px;
+        transform: translateY(0px);
+        width: 83%;
+        margin-left: 0px;
         margin-top: 30px;
     
     }
@@ -375,6 +385,14 @@ a {
 }
 
 @media screen and (max-width: 320px) {
+
+    .search {
+
+        transform: translateY(41px);
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
 
     .img-logo {
 
@@ -440,9 +458,9 @@ a {
     .search-container, .wikipedia {
 
         padding: 30px;
-        transform: translateY(-40px);
-        width: 72%;
-        margin-left: 15px;
+        transform: translateY(0px);
+        width: 79.2%;
+        margin-left: 1px;
         margin-top: 30px;
   
     
