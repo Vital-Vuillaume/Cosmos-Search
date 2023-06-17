@@ -323,10 +323,22 @@ a {
 
     .img-logo {
 
-        transform: translateX(-10px);
+        transform: translateX(0px);
         top: 0;
         left: 0;
     
+    }
+
+    .lien-img {
+
+        transform: translateX(20px);
+    
+    }
+
+    .lien-img:hover {
+
+        transform: translateX(20px) rotate(0deg);
+
     }
     
     .main-title {
@@ -339,6 +351,7 @@ a {
 
         padding-top: 6px;
         padding-bottom: 6px;
+        padding-right: 58px;
     }
 
     .inter {
@@ -447,18 +460,10 @@ a {
     .footer {
 
         transform: translateY(80px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        bottom: 0;
-        left: 0;
         width: 98%;
         background-color: #161616;
         padding: 1%;
-        text-align: center;
-        font-family: 'Secular One', sans-serif;
-    
+
     }
 
     .github:hover {
@@ -466,14 +471,6 @@ a {
         transform: translateY(5px)
     
     }
-
-    .lien-img:hover {
-
-        transform: translateX(27px) rotate(0deg);
-        transform-origin: none none;
-    
-    }
-
 
 }
 
@@ -489,7 +486,7 @@ a {
 
     .lien-img {
 
-    display: none;
+        display: none;
 
     }
 
@@ -509,6 +506,7 @@ a {
 
         padding-top: 6px;
         padding-bottom: 6px;
+        padding-right: 10px;
     }
 
     .inter {
@@ -618,17 +616,9 @@ a {
     .footer {
 
         transform: translateY(80px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        bottom: 0;
-        left: 0;
         width: 98%;
         background-color: #161616;
         padding: 1%;
-        text-align: center;
-        font-family: 'Secular One', sans-serif;
     
     }
 
